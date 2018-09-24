@@ -56,7 +56,7 @@ http.createServer(function (req, resp) {
             break;
         case "POST":
              resp.writeHead(200, "operation  successfull", { "Content-Type": "application/json" });
-             resp.write(JSON.stringify({ speech : "hello shashank"}));
+             resp.write(JSON.stringify({ speech : req}));
              resp.end();
            
             break;
